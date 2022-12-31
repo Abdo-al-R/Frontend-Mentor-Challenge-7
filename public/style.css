@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  background-color: hsl(185, 75%, 39%);
+  font-family: var(--font-family);
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+main {
+  width: 350px;
+  height: 375px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.3);
+}
+.images {
+  position: relative;
+}
+.img-1 {
+  width: 50%;
+  height: 60%;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("../images/bg-pattern-top.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+.img-2 {
+  width: 50%;
+  height: 50%;
+  background-color: hsl(185, 75%, 39%);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background-image: url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+}
+
+.images .back-img {
+  border-radius: 15px 15px 0 0;
+}
+.images .profile-img {
+  height: auto;
+  border-radius: 50%;
+  border: white solid 5px;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 15%);
+}
+.title {
+  width: 100%;
+  text-align: center;
+  margin-top: 4.688rem;
+  margin-bottom: 1.25rem;
+}
+h3 {
+  color: var(--Very-dark-desaturated-blue);
+  font-size: 1.125rem !important;
+}
+h3 .age {
+  font-weight: 400;
+  color: var(--Dark-grayish-blue);
+}
+.title p {
+  color: var(--Dark-) grayish-blue;
+}
+
+.stats {
+  width: 100%;
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.stats span {
+  font-size: 0.625rem;
+  color: var(--Dark-grayish-blue);
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+@media (max-width: 300px) {
+  main {
+    width: 250px !important;
+  }
+  .stats {
+    margin-top: 2.5rem !important;
+  }
+}
+@media (max-width: 375px) {
+  main {
+    width: 300px;
+  }
+  .stats {
+    margin-top: 1.875rem !important;
+  }
+}
